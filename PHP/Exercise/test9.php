@@ -1,0 +1,43 @@
+<?php
+$var = 123;
+var_dump($var);
+echo '<hr />';
+echo gettype($var);
+echo '<hr />';
+echo gettype($abcdjdalfj);
+echo '<hr />';
+// 设置变量类型
+$var = 1;
+settype($var, 'float');
+var_dump($var);
+echo '<hr />';
+settype($var, 'string');
+var_dump($var);
+echo '<hr color="red"/>';
+$var = 1.2;
+var_dump(is_int($var), is_integer($var), is_long($var));
+echo '<hr color="red"/>';
+var_dump(is_float($var), is_double($var), is_real($var));
+echo '<hr color="red"/>';
+$var = false;
+var_dump(is_bool($var));
+echo '<hr color="red"/>';
+$var = 123;
+var_dump(is_scalar($var));
+echo '<hr color="red"/>';
+$var = array();
+var_dump(is_array($var));
+echo '<hr color="red"/>';
+$var = fopen('test9.php', 'r');
+var_dump(is_resource($var));
+echo '<hr color="red"/>';
+$var = new stdClass();
+var_dump(is_object($var));
+echo '<hr color="red"/>';
+$var = null;
+var_dump(is_null($var));
+echo '<hr color="red"/>';
+// 检测是否为数值型，或者是一个字符串的数值
+$var = 1;
+$var = '1.1kajfk';
+var_dump(is_numeric($var));
