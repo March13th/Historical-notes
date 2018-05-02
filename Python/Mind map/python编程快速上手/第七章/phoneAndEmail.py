@@ -10,7 +10,7 @@ phoneRegex = re.compile(r'''(
 (\s*(ext|x|ext\.)\s*(\d{2,5}))? #extension
 )''',re.VERBOSE)
 
-#step2,为Email地址创建一个正则表达式
+#step2,为Email地址创建一个正则表达式y
 #create email regex
 emailRegex = re.compile(r'''(
 [a-zA-Z0-9._%+-]+           #username
